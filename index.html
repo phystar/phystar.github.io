@@ -3,18 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ShuqiYuan</title>
+<meta name="description" content="Shuqi Yuan — education, research experience, and interests in large language models.">
+<title>Shuqi Yuan | SUSTech</title>
 <style>
-body { margin: 0; background: #fafafa; color: #222; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
-main { max-width: 680px; margin: 16vh auto; padding: 0 28px; }
-h1 { font-size: 36px; font-weight: 600; margin-bottom: 20px; }
-a { color: #2456a6; font-size: 18px; overflow-wrap: anywhere; text-underline-offset: 4px; }
+:root { color-scheme: light; --ink: #253247; --muted: #697587; --blue: #28649b; --line: #e5eaf0; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f6f8fb; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 15px; line-height: 1.7; }
+a { color: var(--blue); text-decoration: none; overflow-wrap: anywhere; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+main { max-width: 860px; margin: 64px auto; padding: 48px 56px 30px; background: white; border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 8px 36px rgba(35,50,75,.035); }
+header { border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 30px; }
+.kicker { font-size: 11px; text-transform: uppercase; letter-spacing: .18em; color: var(--muted); margin: 0 0 9px; }
+h1 { font-size: 36px; line-height: 1.25; font-weight: 600; letter-spacing: -.025em; margin: 0 0 16px; }
+.contact { margin: 0; }
+.contact span { color: var(--muted); margin-right: 9px; }
+section { margin: 28px 0; }
+h2 { font-size: 20px; font-weight: 500; margin: 0 0 15px; letter-spacing: -.015em; }
+h2::after { content: ""; display: block; width: 30px; height: 2px; background: var(--blue); margin-top: 8px; }
+p { margin: 0; }
+.entry { display: grid; grid-template-columns: 130px 1fr; gap: 20px; margin-top: 18px; }
+.date { color: var(--muted); font-size: 14px; padding-top: 1px; }
+h3 { font-size: 15px; font-weight: 600; margin: 0 0 2px; }
+.detail { color: var(--muted); font-size: 14px; }
+footer { border-top: 1px solid var(--line); padding-top: 18px; margin-top: 34px; font-size: 11px; color: var(--muted); text-align: right; }
+@media (max-width: 600px) { main { margin: 20px 12px; padding: 30px 24px 24px; } h1 { font-size: 31px; } .entry { grid-template-columns: 1fr; gap: 3px; } .date { font-size: 13px; } footer { text-align: left; } }
 </style>
 </head>
 <body>
 <main>
-<h1>ShuqiYuan</h1>
-<a href="mailto:12632618@mail.sustech.edu.cn">12632618@mail.sustech.edu.cn</a>
+<header>
+<p class="kicker">Academic Homepage</p>
+<h1>Shuqi Yuan</h1>
+<p class="contact"><span>Email</span><a href="mailto:12632618@mail.sustech.edu.cn">12632618@mail.sustech.edu.cn</a></p>
+</header>
+<section aria-labelledby="research">
+<h2 id="research">Research Interests</h2>
+<p>My research interests broadly lie in large language models (LLMs) and their methods and applications.</p>
+</section>
+<section aria-labelledby="education">
+<h2 id="education">Education</h2>
+<div class="entry"><div class="date">2026 &ndash; Present</div><div><h3>Master's Student in Computer Science and Engineering</h3><p class="detail">Southern University of Science and Technology (SUSTech)</p></div></div>
+<div class="entry"><div class="date">2021 &ndash; 2025</div><div><h3>Undergraduate Studies in Computer Science and Engineering</h3><p class="detail">Southern University of Science and Technology (SUSTech)</p></div></div>
+</section>
+<section aria-labelledby="experience">
+<h2 id="experience">Research Experience</h2>
+<div class="entry"><div class="date">2025 &ndash; 2026</div><div><h3>Research Assistant</h3><p class="detail">Department of Computer Science and Engineering</p><p class="detail">Southern University of Science and Technology (SUSTech)</p></div></div>
+</section>
+<footer>Layout inspired by <a href="https://jonbarron.info/">Jon Barron's academic homepage</a>.</footer>
 </main>
 </body>
 </html>
